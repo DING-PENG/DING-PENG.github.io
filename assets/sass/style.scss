@@ -1,0 +1,162 @@
+@import "compass/reset";
+@import "compass/css3";
+@import "compass/utilities/general/clearfix";
+@import "icomoon";
+$nav-color: #384452;
+$bg-color: #F5F4F2;
+$mask-color: #333333;
+body {
+    font-size: 62.5%;
+    background-color: $bg-color;
+}
+
+.hero {
+    text-align: center;
+    color: white;
+    letter-spacing: .1em;
+    width: 100%;
+    min-height: 36em;
+    position: relative;
+    background-color: $mask-color;
+    z-index: 1;
+    &:after {
+        background: url('/assets/img/hero.jpeg');
+        background-size: cover;
+        position: absolute;
+        content: "";
+        z-index: -1;
+        opacity: .2;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+    header {
+        padding-top: 1em;
+        padding-left: 5%;
+        padding-right: 5%;
+        .left {
+            float: left;
+            margin: 0.5em;
+            padding: 0.2em;
+            font-size: 2em;
+        }
+        ul {
+            float: right;
+            li {
+                float: left;
+                margin: 0.5em;
+                padding: 1em;
+            }
+        }
+        a {
+            text-decoration: none;
+            color: white;
+        }
+        @include clearfix;
+    }
+    h1 {
+        padding: 2em 0 1.5em 0;
+        font-size: 500%;
+        &:after {
+            display: block;
+            content: "";
+            background-color: white;
+            width: 30%;
+            height: .1em;
+            margin: .4em auto 0 auto;
+        }
+    }
+    h2 {
+        padding-bottom: 2em;
+        font-size: 300%;
+    }
+}
+
+.home {
+    margin-top: 2em;
+    padding: 0 10% 0 10%;
+    p {
+        padding-top: 2em;
+        font-size: 200%;
+    }
+}
+
+.contact {
+    margin-top: 2em;
+    padding: 0 10% 0 10%;
+    font-size: 200%;
+    p {
+        padding-top: 2em;
+    }
+    ul {
+        list-style-type: disc;
+        padding: 1em 1em;
+        li {
+            margin: 0.5em;
+            padding: 0.5em;
+        }
+        a {
+            text-decoration: none;
+            color: gray;
+        }
+    }
+}
+
+.pro {
+    margin-top: 2em;
+    padding: 0 10% 0 10%;
+    font-size: 200%;
+    h3 {
+        padding-top: 2em;
+
+    }
+    h4 {
+        font-size: 120%;
+        margin-top: 1em;
+    }
+    ul {
+        padding: 1em;
+        li {
+            margin: 0.5em;
+            padding: 0.5em;
+        }
+    }
+}
+
+.footer {
+    text-align: center;
+    margin-top: 6em;
+    margin-bottom: 3em;
+    ul {
+        li {
+            display: inline;
+            padding: 0.5em;
+            margin: 2%;
+            font-size: 3em;
+        }
+    }
+    &:before {
+        display: block;
+        content: "";
+        background-color: white;
+        width: 100%;
+        height: .1em;
+        margin: 0 auto 2em auto;
+    }
+    a {
+        text-decoration: none;
+        color: black;
+    }
+    a:hover {
+        color: gray;
+    }
+    .text {
+        padding-top: 3em;
+        font-size: 1.5em;
+        a {
+            color: gray;
+        }
+    }
+}
+
