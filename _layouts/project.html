@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+<section class="proj">
+    <div class="brief">
+        <h3>{{ page.pname }}</h3>
+        <p class="date">{{ page.type }}</p>
+        <p class="date">{{ page.start }} {% if page.end %} - {{ page.end }} {% endif %}
+        </p>
+        <p><a href="{{ page.link }}">{{ page.link }}</a></p>
+        <p>{{ page.description }}</p>
+    </div>
+    {{ content }}
+</section>
