@@ -2588,24 +2588,32 @@ body {
 /* line 44, ../sass/style.scss */
 .hero header ul {
   float: right;
+  padding: 1em;
+  font-size: 1.5em;
 }
-/* line 46, ../sass/style.scss */
+/* line 48, ../sass/style.scss */
 .hero header ul li {
   float: left;
   margin: 0.5em;
-  padding: 1em;
 }
-/* line 52, ../sass/style.scss */
+/* line 53, ../sass/style.scss */
 .hero header a {
   text-decoration: none;
   color: white;
+  display: block;
+  padding: 1.5em;
+  margin: -1em;
 }
-/* line 58, ../sass/style.scss */
+/* line 60, ../sass/style.scss */
+.hero header a:hover {
+  color: gray;
+}
+/* line 65, ../sass/style.scss */
 .hero h1 {
-  padding: 2em 0 1.5em 0;
+  padding: 1.5em 0 1.5em 0;
   font-size: 500%;
 }
-/* line 61, ../sass/style.scss */
+/* line 68, ../sass/style.scss */
 .hero h1:after {
   display: block;
   content: "";
@@ -2614,112 +2622,124 @@ body {
   height: .1em;
   margin: .4em auto 0 auto;
 }
-/* line 70, ../sass/style.scss */
+/* line 77, ../sass/style.scss */
 .hero h2 {
   padding-bottom: 2em;
   font-size: 300%;
 }
 
-/* line 76, ../sass/style.scss */
+/* line 83, ../sass/style.scss */
 .home {
   margin-top: 2em;
-  padding: 0 10% 0 10%;
+  padding: 0 15% 0 15%;
 }
-/* line 79, ../sass/style.scss */
+/* line 86, ../sass/style.scss */
 .home p {
   padding-top: 2em;
   font-size: 200%;
+  line-height: 150%;
+}
+/* line 91, ../sass/style.scss */
+.home a {
+  text-decoration: none;
+  color: gray;
 }
 
-/* line 85, ../sass/style.scss */
+/* line 97, ../sass/style.scss */
 .contact {
   margin-top: 2em;
-  padding: 0 10% 0 10%;
+  padding: 0 15% 0 15%;
   font-size: 200%;
 }
-/* line 89, ../sass/style.scss */
+/* line 101, ../sass/style.scss */
+.contact a {
+  text-decoration: none;
+  color: gray;
+}
+/* line 105, ../sass/style.scss */
 .contact p {
   padding-top: 2em;
 }
-/* line 92, ../sass/style.scss */
+/* line 108, ../sass/style.scss */
 .contact ul {
   list-style-type: disc;
   padding: 1em 1em;
 }
-/* line 95, ../sass/style.scss */
+/* line 111, ../sass/style.scss */
 .contact ul li {
   margin: 0.5em;
   padding: 0.5em;
 }
-/* line 99, ../sass/style.scss */
-.contact ul a {
-  text-decoration: none;
-  color: gray;
-}
 
-/* line 106, ../sass/style.scss */
+/* line 119, ../sass/style.scss */
 .pro {
   margin-top: 2em;
-  padding: 0 10% 0 10%;
+  padding: 0 15% 0 15%;
   font-size: 200%;
 }
-/* line 110, ../sass/style.scss */
+/* line 123, ../sass/style.scss */
 .pro h3 {
   padding-top: 2em;
 }
-/* line 113, ../sass/style.scss */
+/* line 126, ../sass/style.scss */
 .pro h4 {
   margin-top: 1em;
 }
-/* line 116, ../sass/style.scss */
+/* line 129, ../sass/style.scss */
 .pro ul {
   padding: 0.5em;
 }
-/* line 118, ../sass/style.scss */
+/* line 131, ../sass/style.scss */
 .pro ul li {
   margin: 0.5em;
   padding: 0.5em;
 }
-/* line 122, ../sass/style.scss */
+/* line 135, ../sass/style.scss */
 .pro ul a {
   text-decoration: none;
   color: gray;
 }
+/* line 140, ../sass/style.scss */
+.pro a.back {
+  text-decoration: none;
+  color: gray;
+  font-size: 80%;
+}
 
-/* line 129, ../sass/style.scss */
+/* line 147, ../sass/style.scss */
 .proj {
   margin-top: 2em;
-  padding: 0 10% 0 10%;
+  padding: 0 15% 0 15%;
   font-size: 200%;
 }
-/* line 133, ../sass/style.scss */
+/* line 151, ../sass/style.scss */
 .proj h3 {
   font-size: 150%;
 }
-/* line 136, ../sass/style.scss */
+/* line 154, ../sass/style.scss */
 .proj h4 {
   font-size: 120%;
 }
-/* line 139, ../sass/style.scss */
+/* line 157, ../sass/style.scss */
 .proj p {
   padding-top: 1em;
 }
-/* line 142, ../sass/style.scss */
+/* line 160, ../sass/style.scss */
 .proj .date {
   font-size: 80%;
 }
-/* line 145, ../sass/style.scss */
+/* line 163, ../sass/style.scss */
 .proj a {
   text-decoration: none;
   color: gray;
   font-size: 80%;
 }
-/* line 150, ../sass/style.scss */
+/* line 168, ../sass/style.scss */
 .proj .brief {
   margin-bottom: 2em;
 }
 
-/* line 156, ../sass/style.scss */
+/* line 174, ../sass/style.scss */
 .tech:before {
   display: block;
   content: "";
@@ -2728,35 +2748,35 @@ body {
   height: .1em;
   margin: 0 auto 2em auto;
 }
-/* line 164, ../sass/style.scss */
+/* line 182, ../sass/style.scss */
 .tech ul {
   list-style-type: disc;
   padding: 0.5em 0.5em;
 }
-/* line 167, ../sass/style.scss */
+/* line 185, ../sass/style.scss */
 .tech ul li {
   margin: 0.3em;
   padding: 0.3em;
 }
-/* line 171, ../sass/style.scss */
+/* line 189, ../sass/style.scss */
 .tech ul a {
   text-decoration: none;
   color: gray;
 }
 
-/* line 179, ../sass/style.scss */
+/* line 197, ../sass/style.scss */
 .result ul {
   padding: 0.5em 0.5em;
 }
-/* line 181, ../sass/style.scss */
+/* line 199, ../sass/style.scss */
 .result ul li {
   margin: 0.5em;
 }
-/* line 183, ../sass/style.scss */
+/* line 201, ../sass/style.scss */
 .result ul li img {
   padding: 0.5em;
 }
-/* line 188, ../sass/style.scss */
+/* line 206, ../sass/style.scss */
 .result .video-container {
   position: relative;
   padding-bottom: 56.25%;
@@ -2764,7 +2784,7 @@ body {
   height: 0;
   overflow: hidden;
 }
-/* line 195, ../sass/style.scss */
+/* line 213, ../sass/style.scss */
 .result .video-container iframe,
 .result .video-container object,
 .result .video-container embed {
@@ -2775,20 +2795,20 @@ body {
   height: 100%;
 }
 
-/* line 206, ../sass/style.scss */
+/* line 224, ../sass/style.scss */
 .footer {
   text-align: center;
   margin-top: 6em;
   margin-bottom: 3em;
 }
-/* line 211, ../sass/style.scss */
+/* line 229, ../sass/style.scss */
 .footer ul li {
   display: inline;
   padding: 0.5em;
   margin: 2%;
   font-size: 3em;
 }
-/* line 218, ../sass/style.scss */
+/* line 236, ../sass/style.scss */
 .footer:before {
   display: block;
   content: "";
@@ -2797,21 +2817,32 @@ body {
   height: .1em;
   margin: 0 auto 2em auto;
 }
-/* line 226, ../sass/style.scss */
+/* line 244, ../sass/style.scss */
 .footer a {
   text-decoration: none;
   color: black;
 }
-/* line 230, ../sass/style.scss */
+/* line 248, ../sass/style.scss */
 .footer a:hover {
   color: gray;
 }
-/* line 233, ../sass/style.scss */
+/* line 251, ../sass/style.scss */
 .footer .text {
   padding-top: 3em;
   font-size: 1.5em;
 }
-/* line 236, ../sass/style.scss */
+/* line 254, ../sass/style.scss */
 .footer .text a {
+  color: gray;
+}
+/* line 258, ../sass/style.scss */
+.footer .back {
+  position: absolute;
+  z-index: 1;
+  margin: -1.5em 0 0 5%;
+  font-size: 1.5em;
+}
+/* line 263, ../sass/style.scss */
+.footer .back a {
   color: gray;
 }

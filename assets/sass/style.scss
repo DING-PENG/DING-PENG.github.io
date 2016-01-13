@@ -43,20 +43,27 @@ body {
         }
         ul {
             float: right;
+            padding: 1em;
+            font-size: 1.5em;
             li {
                 float: left;
                 margin: 0.5em;
-                padding: 1em;
             }
         }
         a {
             text-decoration: none;
             color: white;
+            display: block;
+            padding: 1.5em;
+            margin: -1em;
+        }
+        a:hover {
+            color: gray;
         }
         @include clearfix;
     }
     h1 {
-        padding: 2em 0 1.5em 0;
+        padding: 1.5em 0 1.5em 0;
         font-size: 500%;
         &:after {
             display: block;
@@ -75,17 +82,26 @@ body {
 
 .home {
     margin-top: 2em;
-    padding: 0 10% 0 10%;
+    padding: 0 15% 0 15%;
     p {
         padding-top: 2em;
         font-size: 200%;
+        line-height: 150%;
+    }
+    a {
+        text-decoration: none;
+        color: $link-color;
     }
 }
 
 .contact {
     margin-top: 2em;
-    padding: 0 10% 0 10%;
+    padding: 0 15% 0 15%;
     font-size: 200%;
+    a {
+            text-decoration: none;
+            color: $link-color;
+        }
     p {
         padding-top: 2em;
     }
@@ -96,16 +112,13 @@ body {
             margin: 0.5em;
             padding: 0.5em;
         }
-        a {
-            text-decoration: none;
-            color: $link-color;
-        }
+
     }
 }
 
 .pro {
     margin-top: 2em;
-    padding: 0 10% 0 10%;
+    padding: 0 15% 0 15%;
     font-size: 200%;
     h3 {
         padding-top: 2em;
@@ -124,11 +137,16 @@ body {
             color: $link-color;
         }
     }
+    a.back {
+        text-decoration: none;
+        color: $link-color;
+        font-size: 80%;
+    }
 }
 
 .proj {
     margin-top: 2em;
-    padding: 0 10% 0 10%;
+    padding: 0 15% 0 15%;
     font-size: 200%;
     h3 {
         font-size: 150%;
@@ -232,6 +250,15 @@ body {
     }
     .text {
         padding-top: 3em;
+        font-size: 1.5em;
+        a {
+            color: $link-color;
+        }
+    }
+    .back {
+        position: absolute;
+        z-index: 1;
+        margin: -1.5em 0 0 5%;
         font-size: 1.5em;
         a {
             color: $link-color;
