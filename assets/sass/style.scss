@@ -6,6 +6,7 @@ $bg-color: #F5F4F2;
 $mask-color: #333333;
 $link-color: gray;
 body {
+    font-family: 'Josefin Sans', sans-serif;
     font-size: 62.5%;
     background-color: $bg-color;
 }
@@ -34,38 +35,47 @@ body {
     }
     header {
         padding-top: 1em;
-        padding-left: 5%;
-        padding-right: 5%;
-        .left {
-            float: left;
-            margin: 0.5em;
-            padding: 0.2em;
-            font-size: 2em;
+        .brand {
+            padding-top: 1.5em;
+            font-size: 1.8em;
         }
         ul {
-            float: right;
-            padding: 1em;
-            font-size: 1.5em;
+            padding-top: 1.5em;
+            font-size: 1.8em;
             li {
-                float: left;
-                margin: 0.5em;
+                display: inline-block;
+                margin: 0 0.5em 0 0.5em;
             }
         }
         a {
             text-decoration: none;
             color: white;
+            border-bottom: 2px solid transparent;
             display: block;
-            padding: 1.5em;
-            margin: -1em;
+            text-shadow: 2px 2px 4px;
         }
         a:hover {
             color: gray;
+            background-color: transparent;
+            border-bottom-color: gray;
+        }
+        @media (min-width: 768px) {
+            padding-left: 20%;
+            padding-right: 20%;
+            .brand {
+                float: left;
+            }
+            ul {
+                float: right;
+            }
         }
         @include clearfix;
     }
     h1 {
         padding: 1.5em 0 1.5em 0;
         font-size: 500%;
+        color: white;
+        text-shadow: 1px 1px 2px;
         &:after {
             display: block;
             content: "";
@@ -83,7 +93,7 @@ body {
 
 .home {
     margin-top: 2em;
-    padding: 0 15% 0 15%;
+    padding: 0 20% 0 20%;
     p {
         padding-top: 2em;
         font-size: 200%;
@@ -97,7 +107,7 @@ body {
 
 .contact {
     margin-top: 2em;
-    padding: 0 15% 0 15%;
+    padding: 0 20% 0 20%;
     font-size: 200%;
     a {
             text-decoration: none;
@@ -119,7 +129,7 @@ body {
 
 .pro {
     margin-top: 2em;
-    padding: 0 15% 0 15%;
+    padding: 0 20% 0 20%;
     font-size: 200%;
     h3 {
         padding-top: 2em;
@@ -147,7 +157,7 @@ body {
 
 .proj {
     margin-top: 2em;
-    padding: 0 15% 0 15%;
+    padding: 0 20% 0 20%;
     font-size: 200%;
     h3 {
         font-size: 150%;
