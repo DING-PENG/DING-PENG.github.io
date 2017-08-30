@@ -238,10 +238,14 @@ body {
     margin-bottom: 3em;
     ul {
         li {
-            display: inline;
+            display: inline-block;
             padding: 0.5em;
             margin: 2%;
             font-size: 3em;
+            transition: 0.7s;
+        }
+        li:hover {
+            transform: rotate(360deg) scale(1.5);
         }
     }
     &:before {
