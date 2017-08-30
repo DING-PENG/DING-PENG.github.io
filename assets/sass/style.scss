@@ -35,6 +35,8 @@ body {
     }
     header {
         padding-top: 1em;
+        animation-name: fadeIn;
+        animation-duration: 0.6s;
         .brand {
             padding-top: 1.5em;
             font-size: 1.8em;
@@ -84,10 +86,18 @@ body {
             height: .1em;
             margin: .4em auto 0 auto;
         }
+        animation-name: fadeIn;
+        animation-duration: 3s;
+        @media screen and (max-width: 699px) {
+            padding: 0.5em 0 0.5em 0;
+        }
     }
     h2 {
-        padding-bottom: 2em;
+        width: 100%;
+        position: absolute;
         font-size: 300%;
+        animation-name: slideIn;
+        animation-duration: 2s;
     }
 }
 
@@ -98,6 +108,8 @@ body {
         padding-top: 2em;
         font-size: 200%;
         line-height: 150%;
+        animation-name: fadeIn;
+        animation-duration: 3.5s;
     }
     a {
         text-decoration: none;
@@ -109,6 +121,8 @@ body {
     margin-top: 2em;
     padding: 0 20% 0 20%;
     font-size: 200%;
+    animation-name: fadeIn;
+    animation-duration: 3.5s;
     a {
             text-decoration: none;
             color: $link-color;
@@ -122,8 +136,27 @@ body {
         li {
             margin: 0.5em;
             padding: 0.5em;
+            transform: translateX(10em);
+            animation-name: rightSlideIn;
+            animation-duration: 0.6s;
+            animation-fill-mode: forwards;
+            animation-timing-function: linear;
         }
-
+        li:nth-child(2) {
+            animation-delay: 0.1s;
+        }
+        li:nth-child(3) {
+            animation-delay: 0.2s;
+        }
+        li:nth-child(4) {
+            animation-delay: 0.3s;
+        }
+        li:nth-child(5) {
+            animation-delay: 0.4s;
+        }
+        li:nth-child(6) {
+            animation-delay: 0.5s;
+        }
     }
 }
 
@@ -131,6 +164,8 @@ body {
     margin-top: 2em;
     padding: 0 20% 0 20%;
     font-size: 200%;
+    animation-name: fadeIn;
+    animation-duration: 3.5s;
     h3 {
         padding-top: 2em;
     }
@@ -139,9 +174,9 @@ body {
     }
     ul {
         padding: 0.5em;
-        li {
+        li {          
             margin: 0.5em;
-            padding: 0.5em;
+            padding: 0.5em;           
         }
         a {
             text-decoration: none;
@@ -152,6 +187,28 @@ body {
         text-decoration: none;
         color: $link-color;
         font-size: 80%;
+    }
+    div {
+        transform: translateX(10em);
+        animation-name: rightSlideIn;
+        animation-duration: 0.6s;
+        animation-fill-mode: forwards;
+        animation-timing-function: linear;
+    }
+    div:nth-child(2) {
+        animation-delay: 0.1s;
+    }
+    div:nth-child(3) {
+        animation-delay: 0.2s;
+    }
+    div:nth-child(4) {
+        animation-delay: 0.3s;
+    }
+    div:nth-child(5) {
+        animation-delay: 0.4s;
+    }
+    div:nth-child(6) {
+        animation-delay: 0.5s;
     }
 }
 
@@ -243,6 +300,8 @@ body {
             margin: 2%;
             font-size: 3em;
             transition: 0.7s;
+            animation-name: scaleIn;
+            animation-duration: 0.6s;
         }
         li:hover {
             transform: rotate(360deg) scale(1.5);
@@ -279,4 +338,36 @@ body {
             color: $link-color;
         }
     }
+}
+
+.year {
+    ul {
+        li {
+            img:hover {
+                transform: scale(1.5);
+                margin: 0 0.2em;
+                transition: 0.3s;
+            }
+        }
+    }
+}
+
+@keyframes slideIn {
+    from {left: -300px; opacity: 0}
+    to {left: 0; opacity: 1}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+@keyframes scaleIn {
+    from {font-size: 0}
+    to {font-size: 100%}
+}
+
+@keyframes rightSlideIn {
+    from {transform: translateX(10em);}
+    to {transform: translateX(0);}
 }
