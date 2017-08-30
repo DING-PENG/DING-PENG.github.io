@@ -340,18 +340,6 @@ body {
     }
 }
 
-.year {
-    ul {
-        li {
-            img:hover {
-                transform: scale(1.5);
-                margin: 0 0.2em;
-                transition: 0.3s;
-            }
-        }
-    }
-}
-
 @keyframes slideIn {
     from {left: -300px; opacity: 0}
     to {left: 0; opacity: 1}
